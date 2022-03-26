@@ -38,6 +38,9 @@ class Book(models.Model):
     # ManyToManyField, porque un género puede contener muchos libros y un libro puede cubrir varios géneros.
     # La clase Genre ya ha sido definida, entonces podemos especificar el objeto arriba.
 
+    class Meta:
+        ordering = ['title', 'author']
+
     def __str__(self):
         """
         String que representa al objeto Book
