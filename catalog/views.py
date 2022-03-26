@@ -12,6 +12,7 @@ from django.urls import reverse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Author
+from django.contrib.auth.mixins import PermissionRequiredMixin
 
 import datetime
 
